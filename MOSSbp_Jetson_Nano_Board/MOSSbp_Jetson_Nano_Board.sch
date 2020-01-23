@@ -95,19 +95,15 @@ NoConn ~ 8350 3500
 NoConn ~ 8350 3700
 NoConn ~ 8350 3800
 NoConn ~ 8350 3900
-NoConn ~ 8350 4000
-NoConn ~ 8350 4100
 NoConn ~ 8350 4200
 NoConn ~ 9650 2700
 NoConn ~ 9650 2800
-NoConn ~ 9650 2900
 NoConn ~ 9650 3100
 NoConn ~ 9650 3200
 NoConn ~ 9650 3400
 NoConn ~ 9650 3500
 NoConn ~ 9650 3600
 NoConn ~ 9650 3700
-NoConn ~ 9650 3900
 NoConn ~ 9650 4100
 NoConn ~ 9650 4200
 NoConn ~ 9650 4300
@@ -221,17 +217,6 @@ Wire Wire Line
 Wire Wire Line
 	9800 2600 9800 3000
 Connection ~ 9800 3000
-$Comp
-L rg_symbols:Jetson_Nano_Dev J7
-U 1 1 5E099751
-P 7400 3300
-F 0 "J7" H 9000 4425 50  0000 C CNN
-F 1 "Jetson_Nano_Dev" H 9000 4334 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical" H 9000 2100 50  0001 C CNN
-F 3 "~" H 8550 3300 50  0001 C CNN
-	1    7400 3300
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:CP C3
 U 1 1 5E09FF59
@@ -1114,17 +1099,6 @@ F 3 "~" H 6900 5600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR031
-U 1 1 5E3E58FB
-P 6650 5500
-F 0 "#PWR031" H 6650 5350 50  0001 C CNN
-F 1 "+12V" H 6665 5673 50  0000 C CNN
-F 2 "" H 6650 5500 50  0001 C CNN
-F 3 "" H 6650 5500 50  0001 C CNN
-	1    6650 5500
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR032
 U 1 1 5E3E5D52
 P 6650 5800
@@ -1300,4 +1274,176 @@ Wire Wire Line
 	4600 5150 4600 5200
 Text Notes 5650 4750 0    50   ~ 0
 Water Pump
+$Comp
+L power:+24V #PWR?
+U 1 1 5E2B454C
+P 6650 5500
+F 0 "#PWR?" H 6650 5350 50  0001 C CNN
+F 1 "+24V" H 6665 5673 50  0000 C CNN
+F 2 "" H 6650 5500 50  0001 C CNN
+F 3 "" H 6650 5500 50  0001 C CNN
+	1    6650 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L rg_symbols:PTN78020WAH U?
+U 1 1 5E2E2A70
+P 5100 1650
+F 0 "U?" H 5125 2065 50  0000 C CNN
+F 1 "PTN78020WAH" H 5125 1974 50  0000 C CNN
+F 2 "RG_footprints:PTN78020WAH" H 4650 1350 50  0001 C CNN
+F 3 "" H 4650 1350 50  0001 C CNN
+F 4 "296-20515-ND" H 5100 1650 50  0001 C CNN "Digi-Key_PN"
+	1    5100 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR?
+U 1 1 5E2EAD97
+P 4450 1550
+F 0 "#PWR?" H 4450 1400 50  0001 C CNN
+F 1 "+24V" H 4465 1723 50  0000 C CNN
+F 2 "" H 4450 1550 50  0001 C CNN
+F 3 "" H 4450 1550 50  0001 C CNN
+	1    4450 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E2F15A4
+P 4550 2000
+F 0 "C?" H 4665 2046 50  0000 L CNN
+F 1 "2.2u" H 4665 1955 50  0000 L CNN
+F 2 "" H 4588 1850 50  0001 C CNN
+F 3 "~" H 4550 2000 50  0001 C CNN
+	1    4550 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 2100 5350 2050
+$Comp
+L Device:CP C?
+U 1 1 5E32825C
+P 5700 2000
+F 0 "C?" H 5818 2046 50  0000 L CNN
+F 1 "330u" H 5818 1955 50  0000 L CNN
+F 2 "" H 5738 1850 50  0001 C CNN
+F 3 "~" H 5700 2000 50  0001 C CNN
+	1    5700 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E350252
+P 5850 1600
+F 0 "#PWR?" H 5850 1450 50  0001 C CNN
+F 1 "+5V" H 5865 1773 50  0000 C CNN
+F 2 "" H 5850 1600 50  0001 C CNN
+F 3 "" H 5850 1600 50  0001 C CNN
+	1    5850 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E2F2841
+P 5350 2250
+F 0 "R?" H 5280 2204 50  0000 R CNN
+F 1 "734" H 5280 2295 50  0000 R CNN
+F 2 "" V 5280 2250 50  0001 C CNN
+F 3 "~" H 5350 2250 50  0001 C CNN
+	1    5350 2250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5050 2050 5050 2500
+Wire Wire Line
+	5050 2500 4550 2500
+Wire Wire Line
+	4550 2500 4550 2150
+Wire Wire Line
+	5700 2500 5700 2150
+Connection ~ 5050 2500
+Wire Wire Line
+	5550 1650 5700 1650
+Wire Wire Line
+	5700 1650 5700 1850
+Connection ~ 5700 1650
+Wire Wire Line
+	5550 1500 5700 1500
+Wire Wire Line
+	5700 1500 5700 1650
+Wire Wire Line
+	4550 1850 4550 1600
+Wire Wire Line
+	4550 1600 4700 1600
+Wire Wire Line
+	4450 1550 4450 1600
+Wire Wire Line
+	4450 1600 4550 1600
+Connection ~ 4550 1600
+Wire Wire Line
+	5700 1650 5850 1650
+Wire Wire Line
+	5850 1650 5850 1600
+$Comp
+L power:GND #PWR?
+U 1 1 5E3DE30B
+P 5050 2500
+F 0 "#PWR?" H 5050 2250 50  0001 C CNN
+F 1 "GND" H 5055 2327 50  0000 C CNN
+F 2 "" H 5050 2500 50  0001 C CNN
+F 3 "" H 5050 2500 50  0001 C CNN
+	1    5050 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 2500 5200 2500
+Wire Wire Line
+	5200 2500 5700 2500
+Connection ~ 5200 2500
+Wire Wire Line
+	5200 2050 5200 2400
+Wire Wire Line
+	5350 2400 5200 2400
+Connection ~ 5200 2400
+Wire Wire Line
+	5200 2400 5200 2500
+Wire Notes Line
+	4350 2750 4350 1150
+Wire Notes Line
+	4350 1150 6050 1150
+Wire Notes Line
+	6050 1150 6050 2750
+Wire Notes Line
+	6050 2750 4350 2750
+Text Notes 5050 1100 0    50   ~ 0
+5V Regulator
+NoConn ~ 4900 2050
+Wire Wire Line
+	8350 4000 8100 4000
+Text Label 8100 4000 2    50   ~ 0
+WP_PWM
+$Comp
+L rg_symbols:Jetson_Nano_Dev J7
+U 1 1 5E099751
+P 7400 3300
+F 0 "J7" H 9000 4425 50  0000 C CNN
+F 1 "Jetson_Nano_Dev" H 9000 4334 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical" H 9000 2100 50  0001 C CNN
+F 3 "~" H 8550 3300 50  0001 C CNN
+	1    7400 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 3900 9900 3900
+Text Label 9900 3900 0    50   ~ 0
+CF_CTRL
+Wire Wire Line
+	8350 4100 8100 4100
+Text Label 8100 4100 2    50   ~ 0
+VF_CTRL
+Wire Wire Line
+	9650 2900 9900 2900
+Text Label 9900 2900 0    50   ~ 0
+CO2_CTRL
 $EndSCHEMATC
