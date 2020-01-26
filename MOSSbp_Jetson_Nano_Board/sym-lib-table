@@ -150,4 +150,5 @@
   (lib (name dk_TVS-Mixed-Technology)(type Legacy)(uri ${KIPRJMOD}/../../KiCAD_libs/digikey-kicad-library/digikey-symbols/dk_TVS-Mixed-Technology.lib)(options "")(descr ""))
   (lib (name dk_USB-DVI-HDMI-Connectors)(type Legacy)(uri ${KIPRJMOD}/../../KiCAD_libs/digikey-kicad-library/digikey-symbols/dk_USB-DVI-HDMI-Connectors.lib)(options "")(descr ""))
   (lib (name rg_symbols)(type Legacy)(uri ${KIPRJMOD}/../../KiCAD_libs/RG_library/RG_symbols/rg_symbols.lib)(options "")(descr ""))
+  (lib (name MOSSbp_Jetson_Nano_Board-rescue)(type Legacy)(uri ${KIPRJMOD}/MOSSbp_Jetson_Nano_Board-rescue.lib)(options "")(descr ""))
 )
